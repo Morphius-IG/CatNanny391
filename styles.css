@@ -1,7 +1,7 @@
 
 body {
     background-color: #fcc9dc;
-   width: 1280px;
+
 /*    background: url(images/background-1.jpg) 50% 50% no-repeat;*/
 
 }
@@ -111,14 +111,14 @@ text-align: center;
 
 .main .about {
     font-family: 'Comfortaa', cursive;
-    width: 1280px;
+    
     margin: 10px auto 0px;
     padding: 10px;
 
 }
 
 .main .about-text {
-    width: 97%;
+    
     display: flex;
     justify-content: space-around;
     align-items: stretch;
@@ -438,18 +438,207 @@ max-height: 65px;
 
 
 
-@media screen and (max-width: 425px) {
-.about-text {
-    display: flex;
-    flex-wrap: wrap;
+/* АДАПТАЦИЯ */
+
+
+    @media (max-width: 767px) {
+    .about-text {
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    padding-right: 25px;
+    margin-left: -20px;
+   
+
+}
+
+    .about .about-text li {
+    width: 100%;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+    .header-title {
+        max-width: 300px;
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+
+
+    .main-menu {
+        margin-left: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .menu-buttons {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+  .menu-buttons li {
+        max-width: 100px;
+        margin: 20px 20px 0 20px;
+
+    }
+    .menu-button a {
+        font-size: 15px;
+
+}
+
+
+   
+    .menu-button span {
+        font-size: 15px;
+        max-width: 100px;
+
+}
+    .container-logo-header {
+        margin: auto;
+        
+
+    }
+    .main-menu .contacts {
+        display: none
+    }
+
+    .cite-footer {
+        flex-direction: column;
+    }
+
+    .contacts-footer {
+         margin-top: 0;
+         margin-bottom: 30px;
+         font-size: 16px;
+         order: -1;
+
+    }
+
+    .logo-footer {
+        margin: 20px 0;
+
+        order: -2;
+    }
+
+    .social-buttons {
+        margin: 0;
+        margin-bottom: 15px;
+
+    }
+
+}
+
+
+    @media (max-width: 374px) {
+    .container-logo-header {
+        margin-left: 20px;
+}
+
+  .menu-buttons li {
+        max-width: 100px;
+        margin: 20px 30px 0 10px;
+
+    }
 
 
 }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+    .main-menu {
+        margin-left: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .menu-buttons {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .menu-buttons li {
+        max-width: 100px;
+        margin: 20px 20px 0 30px;
+
+    }
+
+    .menu-button a {
+        font-size: 15px;
 }
+
+  
+    .menu-button span {
+        font-size: 15px;
+        max-width: 100px;
+}
+
+    .header-title {
+        max-width: 500px;
+        word-wrap: break-word;
+    }
+
+    .about-text {
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+   }
+
+    .about .about-text li {
+    width: 100%;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+
+    .container-logo-header {
+        margin: auto;
+
+    }
+
+}
+
+
+    .main-menu .contacts {
+        left: 25%;
+    }
+
+
+
+   @media (min-width: 1024px) and (max-width: 1100px) {
+
+
+    .menu-buttons .menu-button span {
+        max-width: 110px;
+    }
+
+    .menu-button a {
+
+        font-size: 18px;
+    }
+
+
+    .about .about-text li {
+    width: 100%;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+
+
+   }
+
+
+
+
+
 
 /*
 
