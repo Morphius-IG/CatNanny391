@@ -383,7 +383,7 @@ max-height: 65px;
     text-align: center;
     word-wrap: wrap;
     }
-}
+
 
 .logo-footer img {
     width: 200px;
@@ -405,6 +405,68 @@ max-height: 65px;
 
 .social img {
     width: 45px;
+}
+
+
+
+
+.customNav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 30%;
+}
+
+
+.arrow {
+    border: solid#ada9a9;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    }
+
+.arrow:hover {
+    border: solid #869791;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;   
+}
+
+.nav-previous a:hover, .nav-next a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #869791;  
+}
+
+.nav-previous a:hover .left, .nav-next a:hover .right {
+    border: solid #869791;
+    cursor: pointer;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;   
+}
+
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: 8px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-right: 8px;
+}
+
+
+.cite-header {
+    margin-top: 40px;
+}
+
+.cite-footer {
+    margin-bottom: 40px;
 }
 
 
@@ -601,7 +663,6 @@ max-height: 65px;
     text-align: center;
     word-wrap: wrap;
     }
-
 
    }
 

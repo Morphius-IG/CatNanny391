@@ -7,10 +7,10 @@ $(document).ready(function() {
 	    autoplayTimeout:4000,
 	    autoplayHoverPause:true,
 		stagePadding: 130,
-		dots: false,
+		dots: true,
 		nav: true,
-		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-		navContainer: '#customNav',
+		navText: ['<span class="arrow left"></span>','<span class="arrow right"></span></i>'],
+		navContainer: '.customNav',
 		responsive: {
 	    // > 0
 	    0 : {
